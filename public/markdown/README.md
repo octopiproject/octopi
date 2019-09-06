@@ -18,7 +18,7 @@ $Route::get('/', function() {
 You may pass arguments as such:
 
 ```php
-$Route::get('/:page', function($page) {
+$Route::get('/{page}', function($page) {
     return $page;
 });
 ```

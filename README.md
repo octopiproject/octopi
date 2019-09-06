@@ -3,6 +3,7 @@ Octopi is a PHP framework for robust applications.  It includes:
 
 - A routing system
 - Models & views
+- Markdown support
 - More soon!
 
 ## Routing
@@ -17,7 +18,7 @@ $Route::get('/', function() {
 You may pass arguments as such:
 
 ```php
-$Route::get('/:page', function($page) {
+$Route::get('/{page}', function($page) {
     return $page;
 });
 ```
