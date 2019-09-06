@@ -10,7 +10,7 @@ Octopi is a PHP framework for robust applications.  It includes:
 Octopi routing uses a URI and a `Closure` to provide an easy way to Route your website.
 
 ```php
-$Route::get('/', function() {
+Route::get('/', function() {
     return 'Hello, world!';
 });
 ```
@@ -18,7 +18,7 @@ $Route::get('/', function() {
 You may pass arguments as such:
 
 ```php
-$Route::get('/{page}', function($page) {
+Route::get('/{page}', function($page) {
     return $page;
 });
 ```
@@ -29,8 +29,8 @@ hello
 ```
 
 ### It supports the current methods:
-- `$Route::post`
-- `$Route::get`
+- `Route::post`
+- `Route::get`
 
 # Contributing
 **Hey!**  Thanks for taking the time to contribute!  If you think there is an error, feel free to report it via a `pull request` or issue.
